@@ -3,8 +3,8 @@ Easily add superscript footnote numbers to text that link to corresponding footn
 
 ## Installation
 Link to `footnoted.js` after jQuery.
-    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-    <script src="http://code.jquery.com/footnoted.js"></script>
+    &#60;script src="http://code.jquery.com/jquery-1.10.1.min.js"></script&#62;
+    &#60;script src="http://code.jquery.com/footnoted.js"></script&#62;
 
 ## Usage
 1. Insert `<sup class="footnoted"></sup>` where you want a link to your footnotes to appear in your text.
