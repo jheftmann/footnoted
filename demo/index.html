@@ -13,7 +13,7 @@
 <script>
 // scrolling nav
 $(document).ready(function() {
-  $('.footnoted').onePageNav();
+  $('.wrapper').onePageNav();
 });
 </script>
 
@@ -28,12 +28,12 @@ $(document).ready(function() {
 
 	// tell the superscripts where to go
 	$('.footnoted a').each(function(i){
-		this.href = "#footnote-"+(i);
+		this.href = "#footnote-"+(i+1);
 	});
 
 	// set a target for the superscripts to scroll to
 	$('#footnotes li').each(function(i){
-		this.id = "footnote-"+(i);
+		this.id = "footnote-"+(i+1);
 	});
 
 	// scroll to top
