@@ -12,23 +12,8 @@
 
 <script>
 // scrolling nav
-$('.footnoted').onePageNav({
-    currentClass: 'current',
-    changeHash: false,
-    scrollSpeed: 750,
-    scrollOffset: 30,
-    scrollThreshold: 0.5,
-    filter: '',
-    easing: 'swing',
-    begin: function() {
-        //I get fired when the animation is starting
-    },
-    end: function() {
-        //I get fired when the animation is ending
-    },
-    scrollChange: function($currentListItem) {
-        //I get fired when you enter a section and I pass the list item of the section
-    }
+$(document).ready(function() {
+  $('.footnoted').onePageNav();
 });
 </script>
 
@@ -42,13 +27,20 @@ $(document).ready(function() {
 	});
 
 	// tell the superscripts where to go
-	$(".footnoted a").each(function(i){
+	$('.footnoted a').each(function(i){
 		this.href = "#footnote-"+(i);
 	});
 
 	// set a target for the superscripts to scroll to
-	$("#footnotes li").each(function(i){
+	$('#footnotes li').each(function(i){
 		this.id = "footnote-"+(i);
+	});
+
+	// scroll to top
+	$('#footnotes li').last().html('<a id="top">Back to top</a>');
+
+	$('#top').click(function() {
+		$("html, body").animate({ scrollTop: 0 }, "fast");
 	});
 
 });
