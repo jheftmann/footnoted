@@ -2,7 +2,7 @@
 Easily add superscript footnote numbers to text that link to corresponding footnotes below.
 
 ## Installation
-Link to the footnoted.js (or minified version) after jQuery.
+Link to the footnoted.js after jQuery.
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="http://code.jquery.com/footnoted.js"></script>
 
