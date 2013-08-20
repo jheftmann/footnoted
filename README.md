@@ -3,6 +3,7 @@ Easily add superscript footnote numbers to text that link to corresponding footn
 
 ## Installation
 Link to `footnoted.js` after jQuery.
+
     &#60;script src="http://code.jquery.com/jquery-1.10.1.min.js"></script&#62;
     &#60;script src="http://code.jquery.com/footnoted.js"></script&#62;
 
