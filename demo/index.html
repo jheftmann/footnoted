@@ -34,10 +34,10 @@ $('.footnoted').onePageNav({
 
 <script>
 $(document).ready(function() {
-
-	$('.footnoted').html('<a></a>');
-	$('.footed a').each(function(i){
-		this.href = "#section-"+(i+1);
+	
+	//$foo = "#section-"+(i+1);
+	$('.footnoted').html('<a>a</a>');
+	$('.footnoted').attr('href', $foo);
 	});
 
 });	
