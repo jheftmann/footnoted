@@ -11,9 +11,13 @@
 <script src="jquery.nav.js"></script>
 
 <script>
-// scrolling nav
-$(document).ready(function() {
-  $('.wrapper').onePageNav();
+// you could set it upscrolling nav
+jQuery(document).ready(function($) {
+
+	$("a").click(function(event){
+		event.preventDefault();
+		$('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+	});
 });
 </script>
 
@@ -23,7 +27,7 @@ $(document).ready(function() {
 	// make a link out of any <sup> with class .footnoted
 	$('.footnoted').each(function(i){
 		var superscript = i+1;
-		$(this).html('&nbsp;<a>' + superscript + '</a>');
+		$(this).html('<a>' + superscript + '</a>');
 	});
 
 	// tell the superscripts where to go
@@ -32,19 +36,21 @@ $(document).ready(function() {
 	});
 
 	// set a target for the superscripts to scroll to
+	// if you're not using a list for your footnotes, change li to the correct selector
 	$('#footnotes li').each(function(i){
 		this.id = "footnote-"+(i+1);
 	});
 
-	// scroll to top
+	// make a back to top link at the end of your footnotes
+	// if you're not using a list for your footnotes, change li to the correct selector
 	$('#footnotes li').last().html('<a id="top">Back to top</a>');
 
+	// scroll back to the top
 	$('#top').click(function() {
 		$("html, body").animate({ scrollTop: 0 }, "fast");
 	});
 
 });
-
 </script>
 
 <style type="text/css">
@@ -78,8 +84,11 @@ font-size: 13px;
 line-height: 1.6;
 }
 
-sup a {
+sup.footnoted a {
 color: red;
+font-family: inherit;
+font-size: 80%;
+margin-left: .2em;
 }
 
 </style>
