@@ -1,6 +1,8 @@
 # Footnoted
 Easily add superscript footnote numbers to text that automatically link to corresponding footnotes below. Also makes a Top link after the footnotes.
 
+[See the demo](http://jacobheftmann.com/projects/footnoted/#footnote-1)
+
 ## Installation
 Link to `footnoted.min.js` (or customize and link to `footnoted.js`) after jQuery.
 
