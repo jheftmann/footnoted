@@ -1,11 +1,11 @@
 # Footnoted
-Easily add superscript footnote numbers to text that link to corresponding footnotes below.
+Easily add superscript footnote numbers to text that automatically link to corresponding footnotes below. Also makes a Top link after the footnotes.
 
 ## Installation
-Link to `footnoted.js` after jQuery.
+Link to `footnoted.min.js` (or customize and link to `footnoted.js`) after jQuery.
 
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-    <script src="footnoted.js"></script>
+    <script src="footnoted.min.js"></script>
 
 ## Usage
 1. Insert `<sup class="footnoted"></sup>` where you want a link to your footnotes to appear in your text.
@@ -13,5 +13,4 @@ Link to `footnoted.js` after jQuery.
 
 ### Optional
 - Link to `footnoted.css` if you want the default styling.
-- You can style superscripts, footnotes, or the top link however you please.
-- You can also use a plugin for smooth-scrolling to the footnotes.
+- You can style superscripts (`sup.footnoted`), footnotes (`#footnotes`, `#footnotes li`), or the top link (`li#back-to-top`) however you please.
