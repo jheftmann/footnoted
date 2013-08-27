@@ -7,8 +7,6 @@
 <meta name="viewport" content="width=device-width, user-scalable=no" />
 
 <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-<script src="jquery.scrollto.js"></script>
-<script src="jquery.nav.js"></script>
 
 <script>
 // you could set it upscrolling nav
@@ -52,18 +50,17 @@ $(document).ready(function() {
 
 	// smooth scroll to footnotes
 	$('.footnoted a[href^="#"]').on('click',function (e) {
-	    e.preventDefault();
+			e.preventDefault();
 
-	    var target = this.hash,
-	    $target = $(target);
+			var target = this.hash,
+			$target = $(target);
 
-	    $('html, body').stop().animate({
-	        'scrollTop': $target.offset().top
-	    }, 900, 'swing', function () {
-	        window.location.hash = target;
-	    });
-	});
-
+			$('html, body').stop().animate({
+				'scrollTop': $target.offset().top
+			}, 900, 'swing', function () {
+				window.location.hash = target;
+			});
+		});
 
 });
 </script>
