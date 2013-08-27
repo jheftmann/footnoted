@@ -8,7 +8,7 @@ Link to `footnoted.min.js` (or customize and link to `footnoted.js`) after jQuer
     <script src="footnoted.min.js"></script>
 
 ## Usage
-1. Insert `<sup class="footnoted"></sup>` where you want a link to your footnotes to appear in your text.
+1. Insert `<sup class="footnoted"></sup>` where you want a link to your footnotes to appear in your text. You don't need to add your own numbers or links.
 2. Add the ID of `#footnotes` to the container of your footnotes. _Footnoted_ assumes you're using a list (either `<ol>` or `<ul>`) for your footnotes, but you can change this in `footnoted.js` if your page structure is different.
 
 ### Optional
