@@ -4,3 +4,7 @@ font-family: inherit;
 font-size: 80%;
 margin-left: .2em;
 }
+
+a#top:hover {
+cursor: pointer;
+}
