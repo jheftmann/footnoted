@@ -1,3 +1,7 @@
+sup.footnoted {
+vertical-align: super;
+}
+
 sup.footnoted a {
 color: red;
 font-family: inherit;
