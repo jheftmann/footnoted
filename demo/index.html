@@ -33,7 +33,7 @@ $(document).ready(function() {
 		this.id = "footnote-"+(i+1);
 	});
 
-	//
+	// add return to reading position link at the end of the footnote
 	$('#footnotes li').append('<span class="return-to-reading footnoted" style="display:none;"><a> &uarr; Back to reading position</a></span>');
 
 	// give the return to position url an href of the target ID
@@ -63,7 +63,7 @@ $(document).ready(function() {
 			});
 		});
 
-	// smooth scroll to footnotes
+	// smooth scroll between reading position and footnotes
 	$('.footnoted a[href^="#"]').on('click',function (e) {
 			e.preventDefault();
 
