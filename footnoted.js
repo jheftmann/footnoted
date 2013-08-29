@@ -1,3 +1,7 @@
+/* footnoted.js */
+/* v1.1 */
+/* by Jacob Heftmann - www.jacobheftmann.com */
+
 $(document).ready(function() {
 
 	// make a link out of any <sup> with class .footnoted
