@@ -33,6 +33,14 @@ $(document).ready(function() {
 		this.id = "footnote-"+(i+1);
 	});
 
+	//
+	$('#footnotes li').append('<span class="return-to-reading footnoted" style="display:none;"><a> &uarr; Back to reading position</a></span>');
+
+	// give the return to position url an href of the target ID
+	$('#footnotes span a').each(function(i){
+		this.href = "#reading-position-"+(i+1);
+	});
+
 	// make a back to top link at the end of your footnotes
 	// if you're not using a list for your footnotes, change li to the correct selector
 	$('#footnotes li').last().after('<li id="back-to-top"><a>&uarr;&nbsp;&nbsp;Back to top</a></li>');
@@ -73,12 +81,8 @@ $(document).ready(function() {
 			$('#footnotes li').removeClass('current-footnote');
 
 			// add return to reading position link and give the current footnote a class for additional styles
-			$(target).addClass('current-footnote').append('<span class="blah"><a> &uarr; Back to reading position</a></span>');
-
-			// give the return to position url an href of the target ID
-			$('#footnotes span a').each(function(i){
-				this.href = "#reading-position-"+(i+1);
-			});
+			$(target).addClass('current-footnote');
+			$('.current-footnote span').css('display', 'inline');
 	});
 
 });
