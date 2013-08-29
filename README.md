@@ -1,5 +1,5 @@
 # Footnoted
-Easily add superscript footnote numbers to text that automatically link to corresponding footnotes below. Also makes a Top link after the footnotes.
+Easily add superscript footnote numbers to text that automatically link to corresponding footnotes below. Footnotes have a link to take you back to your previous reading position. Also makes a Top link after the footnotes.
 
 [See the demo](http://jacobheftmann.com/projects/footnoted/)
 
