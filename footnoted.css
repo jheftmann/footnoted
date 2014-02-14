@@ -9,6 +9,11 @@ font-size: 80%;
 margin-left: .2em;
 }
 
+sup.footnoted a:target,
+current-footnote:target{
+  background: #FFFFDD;
+}
+
 #back-to-top {
 cursor: pointer;
 list-style-type: none;
